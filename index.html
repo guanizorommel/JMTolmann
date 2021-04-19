@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    Author: Rommel Guanizo
+    Company: JM Tolmann Laboratories
+    Version: 1.0
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JM Tolmann Laboratories</title>
+</head>
+<body>
+    <!--header starts here-->
+    <header>
+        <a href="#" class="logo">JM<span> Tolmann</span></a>
+        <ul class="navigation">
+            <li><a href="#banner">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">News and Updates</a></li>
+            <li><a href="#">Contact</a></li>
+
+        </ul>
+    </header>
+    <!--header ends here-->
+
+    <!--Banner Section Starts Here-->
+    <section class="banner" id="banner">
+        <div class="content">
+            <h2>Pharmaceutical Manufacturer</h2>
+            <p>We create quality and affordable medicines to serve the health of filipino people</p>
+            <a href="#" class="btn">Products</a>
+        </div>
+    </section>
+
+    <!--Javascript for sticky top header-->
+    <script type="text/javascript">
+     window.addEventListener('scroll', function(){
+         const header = document.querySelector('header');
+         header.classList.toggle("sticky", window.scrollY > 0);
+         });
+    </script>
+    
+<!--  
+
+    Reference Link: https://www.youtube.com/watch?v=ac5nmWOkBEY&t=170s
+    Current Time: 10:10
+-->
+
+</body>
+</html>

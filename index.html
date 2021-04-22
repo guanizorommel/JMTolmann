@@ -18,13 +18,14 @@
     <!--header starts here-->
     <header>
         <a href="#" class="logo">JM<span> Tolmann</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
         <ul class="navigation">
-            <li><a href="#banner">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#product">Products</a></li>
-            <li><a href="#client">Clients</a></li>
-            <li><a href="#awards">Awards</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#banner" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="#product" onclick="toggleMenu();">Products</a></li>
+            <li><a href="#client" onclick="toggleMenu();">Clients</a></li>
+            <li><a href="#awards" onclick="toggleMenu();">Awards</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
         </ul>
     </header>
     <!--header ends here-->
@@ -316,17 +317,32 @@
     <!-- End of Contact Section-->
 
     <!-- Footer starts-->
+    <div class="copyrightText">
+        <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> JM Tolmann Laboratories | Created with &hearts; by <a href ="https://github.com/guanizorommel">Rommel Guanizo</a></p>
+    </div>
     
 
 
 
-    <!--Javascript for sticky top header-->
+    <!--Javascript for sticky top header and menu toggle-->
     <script type="text/javascript">
      window.addEventListener('scroll', function(){
          const header = document.querySelector('header');
          header.classList.toggle("sticky", window.scrollY > 0);
          });
+
+
+         function toggleMenu(){
+             const menuToggle = document.querySelector('.menuToggle');
+             const navigation = document.querySelector('.navigation');
+             menuToggle.classList.toggle('active');
+             navigation.classList.toggle('active');
+         }
+
+
     </script>
+
+   
 
     
     <!-- Facebook Messenger Chat Plugin Code -->

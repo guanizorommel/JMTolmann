@@ -49,6 +49,40 @@ p {
    
 }
 
+/*Product Banner CSS */
+.productbanner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, var(--primary), var(--secondary)),
+                url(image/productbanner.jpg);
+    background-size: 100%;
+}
+
+.productbanner .productcontent {
+    margin-top: 100px;
+    max-width: 900px;
+    text-align: center;
+}
+
+.productbanner .productcontent h2 {
+    font-size: 3em;
+    color: #fff;
+    
+}
+
+.productbanner .productcontent p {
+    font-size: 1.1em;
+    color: #fff;
+   
+}
+
+/*Product Banner Ends Here */
+
+
 .btn{
     font-size: 1em;
     color: #fff;
@@ -526,3 +560,47 @@ section {
 }
 
 
+/* */
+section ul {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+section ul li {
+    list-style: none;
+    background: #eee;
+    padding: 8px 20px;
+    margin: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+section ul li.active {
+    background: #ff0157;
+    color: #fff;
+}
+
+.product2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:  center;
+}
+
+.product .itemBox2 {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 5px;
+}
+
+.product .itemBox2 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+  

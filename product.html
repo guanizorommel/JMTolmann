@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    Author: Rommel Guanizo
+    Company: JM Tolmann Laboratories
+    Version: 1.0
+    Comment: Template inspired by Online Tutorials
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="image/siteicon.jpg"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>JM Tolmann Laboratories | Products</title>
+</head>
+<body>
+    <!--header starts here-->
+    <header>
+        <a href="#" class="logo">JM<span> Tolmann</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="index.html" onclick="toggleMenu();">Home</a></li>
+            <li><a href="index.html#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="#product" onclick="toggleMenu();">Products</a></li>
+            <li><a href="index.html#client" onclick="toggleMenu();">Clients</a></li>
+            <li><a href="index.html#awards" onclick="toggleMenu();">Awards</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+    </header>
+    <!--header ends here-->
+
+    <!--Banner Section Starts Here-->
+    <section class="productbanner" id="productbanner">
+        <div class="productcontent">
+            <h2>Products Manufactured</h2>
+            <p>We create Quality and Affordable Medicines to serve the health of the Filipino people.</p>
+            <a href="#product" class="btn">See All Products</a>
+        </div>
+    </section>
+    <!-- Banner Section End-->
+
+    
+    <!--Start of Product Section -->
+    <section class="product" id="product">
+        <div class="title">
+            <h2 class="titleText"><span>P</span>roducts</h2>
+            <p>Client Products we Manufactured</p><br><br>
+        </div>
+
+        <ul>
+          <li class="list active" data-filter="all">All</li>
+          <li class="list" data-filter="drug">Drug Pharmaceuticals</li>
+          <li class="list" data-filter="food">Food Supplements</li>
+        </ul>
+
+        <div class="product2">
+          <div class="itemBox2 drug"><img src="productimage/drug/betahistine.jpg" alt=""></div>
+          <div class="itemBox2 drug"><img src="productimage/drug/cefixime.jpg" alt=""></div>
+          <div class="itemBox2 food"><img src="productimage/food/calcifirst.JPG" alt=""></div>
+          <div class="itemBox2 food"><img src="productimage/food/calciumate.jpg" alt=""></div>
+          <div class="itemBox2 food"><img src="productimage/food/ezgrow.JPG" alt=""></div>
+          <div class="itemBox2 food"><img src="productimage/food/vitalungs.jpg" alt=""></div>
+        </div>
+
+
+    
+    </section>
+
+    <!-- End of Product Section-->
+  <!-- Jquery for Filter Image-->
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.list').click(function(){
+        const value = $(this).attr('data-filter');
+        if (value == 'all'){
+          $('.itemBox2').show('1000');
+        }
+        else{
+          $('.itemBox2').not('.'+value).hide('1000');
+          $('.itemBox2').filter('.'+value).show('1000');
+        }
+      })
+      // add active class on selected item
+      $('.list').click(function(){
+        $(this).addClass('active').siblings().removeClass('active')
+      })
+    })
+  
+  
+  
+  </script>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Start of Contact Section-->
+    <section class="contact" id="contact">
+        <div class="title">
+            <h2 class="titleText"><span>C</span>ontact Us</h2>
+            <p>Office Hours 8:00 AM to 5:00PM Monday to Friday</p>
+            <p>Landline Numbers: 02 - 89323263 or 02 - 89323264</p>
+            <p>Location: 95 North Zuzuarregui Street Holy Spirit Diliman Quezon City</p>
+        </div>
+
+        <div class="contactForm">
+            <h3>Send Message</h3>
+            <form target ="_blank" action="https://formsubmit.co/a1e91bf4e72c958cd04337b4b3592852" method="POST">
+                <input type="hidden" name='_subject' value="New Inquiry from JMT Website">
+                <input type="hidden" name="_template" value="table">
+                <input type="text" name="_honey" style="display:none">
+            <div class="inputBox">
+                <input type="text" name= "name" placeholder="Name" required>
+            </div>
+            <div class="inputBox">
+                <input type="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="inputBox">
+                <textarea placeholder="Your Message" name="message" rows="5"></textarea>
+            </div>
+            <div class="inputBox">
+                <input type="submit" value="Send">
+            </div>
+            </form>
+
+        </div>
+    </section>
+    <!-- End of Contact Section-->
+
+    <!-- Footer starts-->
+    <div class="copyrightText">
+        <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> JM Tolmann Laboratories | Created with &hearts; by <a href ="https://github.com/guanizorommel">Rommel Guanizo</a></p>
+    </div>
+    
+
+
+
+    <!--Javascript for sticky top header and menu toggle-->
+    <script type="text/javascript">
+     window.addEventListener('scroll', function(){
+         const header = document.querySelector('header');
+         header.classList.toggle("sticky", window.scrollY > 0);
+         });
+
+
+         function toggleMenu(){
+             const menuToggle = document.querySelector('.menuToggle');
+             const navigation = document.querySelector('.navigation');
+             menuToggle.classList.toggle('active');
+             navigation.classList.toggle('active');
+         }
+
+
+    </script>
+
+   
+
+    
+    <!-- Facebook Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v10.0'
+          });
+        };
+
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+      </script>
+
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution="page_inbox"
+        page_id="2289362417966527">
+      </div>
+
+     
+
+      
+
+</body>
+</html>

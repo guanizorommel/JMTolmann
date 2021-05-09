@@ -546,6 +546,10 @@ section {
         margin-bottom: 30px;
     }
 
+    .banner{
+        background-size: cover;
+    }
+
 
 
 }

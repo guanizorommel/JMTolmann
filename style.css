@@ -546,13 +546,7 @@ section {
         margin-bottom: 30px;
     }
 
-    .banner{
-        background-size: cover;
-    }
 
-    .productbanner {
-        background-size: cover;
-    }
 
 }
 
@@ -562,13 +556,12 @@ section {
         color: #fff;
     }
 
-    .productbanner {
-        background-size: cover;
-    }
+  
 }
 
 @media (max-width: 2000px) {
-    .productbanner {
+    .productbanner,
+    .banner {
         background-size: cover;
     }
 

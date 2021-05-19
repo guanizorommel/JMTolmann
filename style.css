@@ -59,7 +59,8 @@ p {
     align-items: center;
     background: linear-gradient(135deg, var(--primary), var(--secondary)),
                 url(image/productbanner.jpg);
-    background-size: 100%;
+    /* background-position: center center;
+    background-size: cover; */
 }
 
 .productbanner .productcontent {

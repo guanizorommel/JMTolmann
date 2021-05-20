@@ -1,6 +1,6 @@
 # JMTolmann Website
 This Project is for the creation on new JM Tolmann Website <br>
-Developed Using: HTML, CSS & JS
+Developed Using: HTML, CSS & JS <br>
 Project Started: April 19, 2021 <br>
 Project Finished: May 20, 2021 <br>
 

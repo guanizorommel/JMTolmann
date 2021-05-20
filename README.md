@@ -4,7 +4,9 @@ Project Started: April 19, 2021
 Project Finished: 
 
 The Website consist of Simple Landing Page with Product Gallery w/ Filter Function using Jquery 
-It also hase Facebook Messenger Integration and Contact Form
+It also have Facebook Messenger Integration.
+
+Contact form uses javascript 3rd party email service with validation and anti - spam
 
 Check the live website here:
 Link: https://jmtolmannlab.com/
@@ -13,4 +15,4 @@ Link: https://jmtolmannlab.com/
 Or View the Source code in Githubpage
 Link: https://guanizorommel.github.io/JMTolmann/
 
-The live website runs on Hostgator Shared hosting with Cpanel. HTTPS via Let's Encrypt
+

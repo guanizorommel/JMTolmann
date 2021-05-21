@@ -117,6 +117,17 @@ header {
     transition: 0.5s;
 }
 
+/* .jmtlogo {
+    align-self: flex-start;
+    width: 20%;
+    
+} */
+
+/* .jmtlogo img {
+    max-width: 100%;
+    
+} */
+
 /* when element class become sticky */
 header.sticky {
     background: #fff;
@@ -139,7 +150,24 @@ header .logo {
     font-weight: 700;
     font-size: 2em;
     text-decoration: none;
+
+    align-items: center;
+    width: 25%;
+
+    
+
+    
+
 }
+
+header .logo img {
+    max-width: 100%;
+    margin-top: 10px;
+}
+
+
+
+
 
 header .logo span {
     color: #ff0157;
